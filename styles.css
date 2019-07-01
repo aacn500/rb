@@ -70,8 +70,8 @@
 }
 
 .Summary {
-  display: none;
-  visibility: hidden;
+  /* display: none; */
+  /* visibility: hidden; */
 
   font-size: 0.9375rem;
   line-height: 1.125rem;
