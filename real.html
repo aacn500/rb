@@ -25,6 +25,12 @@
           content: "grid-column-gap"
         }
       }
+
+      @supports (grid-column: 1 / span 12) {
+        .grid-column::before {
+          content: "grid-column"
+        }
+      }
     </style>
   </head>
   <body>
@@ -32,6 +38,7 @@
       <li class="supports-grid"></li>
       <li class="grid-template-columns"></li>
       <li class="grid-column-gap"></li>
+      <li class="grid-column"></li>
     </ul>
   </body>
 </html>
