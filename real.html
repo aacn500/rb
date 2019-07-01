@@ -31,6 +31,12 @@
           content: "grid-column"
         }
       }
+
+      @supports (padding: 1.5rem 0 1.5rem) {
+        .three-nums::before {
+          content: "three-nums"
+        }
+      }
     </style>
   </head>
   <body>
@@ -39,6 +45,7 @@
       <li class="grid-template-columns"></li>
       <li class="grid-column-gap"></li>
       <li class="grid-column"></li>
+      <li class="three-nums"></li>
     </ul>
   </body>
 </html>
