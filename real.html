@@ -37,6 +37,12 @@
           content: "three-nums"
         }
       }
+
+      @supports (fit-content(200px)) {
+        .plain-fit-content::before {
+          content: "plain-fit-content"
+        }
+      }
     </style>
   </head>
   <body>
@@ -46,6 +52,7 @@
       <li class="grid-column-gap"></li>
       <li class="grid-column"></li>
       <li class="three-nums"></li>
+      <li class="plain-fit-content"></li>
     </ul>
   </body>
 </html>
