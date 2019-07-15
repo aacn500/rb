@@ -2,45 +2,47 @@
 <html>
   <head>
     <style>
+      color: red;
+
       @supports (display: grid) {
-        .supports-grid::before {
-          content: "supports-grid"
+        .supports-grid {
+          color: green;
         }
       }
 
       @supports (grid-template-columns: repeat(6, 1fr)) {
-        .grid-template-columns::before {
-          content: "grid-template-columns"
+        .grid-template-columns {
+          color: green;
         }
       }
 
       @supports (grid-template-columns: repeat(6, 1fr)) {
-        .grid-template-columns::before {
-          content: "grid-template-columns"
+        .grid-template-columns {
+          color: green;
         }
       }
 
       @supports (grid-column-gap: 1rem) {
-        .grid-column-gap::before {
-          content: "grid-column-gap"
+        .grid-column-gap {
+          color: green;
         }
       }
 
       @supports (grid-column: 1 / span 12) {
-        .grid-column::before {
-          content: "grid-column"
+        .grid-column {
+          color: green;
         }
       }
 
       @supports (padding: 1.5rem 0 1.5rem) {
-        .three-nums::before {
-          content: "three-nums"
+        .three-nums {
+          color: green;
         }
       }
 
       @supports (grid-template-columns: fit-content(200px)) {
-        .plain-fit-content::before {
-          content: "plain-fit-content"
+        .plain-fit-content {
+          color: green;
         }
       }
     </style>
