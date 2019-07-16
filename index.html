@@ -15,11 +15,11 @@
         }
       }
 
-      @supports (grid-template-columns: repeat(6, 1fr)) {
-        .grid-template-columns {
+      @supports (grid-template-columns: fit-content(200px)) {
+        .supports-fit-content {
           color: green;
         }
-        .grid-template-columns::after {
+        .supports-fit-content::after {
           content: ' YES';
         }
       }
@@ -59,25 +59,16 @@
           content: ' YES';
         }
       }
-
-      @supports (grid-template-columns: fit-content(200px)) {
-        .plain-fit-content {
-          color: green;
-        }
-        .plain-fit-content::after {
-          content: ' YES';
-        }
-      }
     </style>
   </head>
   <body>
     <ul>
       <li class="supports-grid">supports-grid</li>
+      <li class="supports-fit-content">supports-fit-content</li>
       <li class="grid-template-columns">grid-template-columns</li>
       <li class="grid-column-gap">grid-column-gap</li>
       <li class="grid-column">grid-column</li>
       <li class="three-nums">three-nums</li>
-      <li class="plain-fit-content">plain-fit-content</li>
     </ul>
   </body>
 </html>
