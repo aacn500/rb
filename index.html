@@ -1,97 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hi</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <style>
+      color: red;
+
+      @supports (display: grid) {
+        .supports-grid {
+          color: green;
+        }
+      }
+
+      @supports (grid-template-columns: repeat(6, 1fr)) {
+        .grid-template-columns {
+          color: green;
+        }
+      }
+
+      @supports (grid-template-columns: repeat(6, 1fr)) {
+        .grid-template-columns {
+          color: green;
+        }
+      }
+
+      @supports (grid-column-gap: 1rem) {
+        .grid-column-gap {
+          color: green;
+        }
+      }
+
+      @supports (grid-column: 1 / span 12) {
+        .grid-column {
+          color: green;
+        }
+      }
+
+      @supports (padding: 1.5rem 0 1.5rem) {
+        .three-nums {
+          color: green;
+        }
+      }
+
+      @supports (grid-template-columns: fit-content(200px)) {
+        .plain-fit-content {
+          color: green;
+        }
+      }
+    </style>
   </head>
   <body>
-    <p class="Paragraph">Hi</p>
-    <ul class="UnorderedList">
-        <li class="ListItem">
-            <div class="StoryPromoWrapper">
-              <div class="ImageGridItem">
-                <!-- the real page has two more divs with nested grids; but they're not using @supports grid :( -->
-                <div class="ImagePlaceholder">
-                  <img class="Img" src="https://ichef.bbci.co.uk/news/660/cpsdevpb/13540/test/_63586197_newodinga.jpg" width="976">
-                </div>
-              </div>
-              <div class="TextGridItem">
-                <h3 class="Headline">
-                  <a class="Link fauxblocklink" href="/pidgin">
-                    Lorem ipsum
-                  </a>
-                </h3>
-                <p class="Summary">
-                  Exercitationem laudantium qui dolores est soluta nobis labore fugit. Quisquam quas voluptatem debitis excepturi illo incidunt magnam dolor. Maiores laudantium ea et doloremque eos tenetur.
-                </p>
-                <time class="Timestamp">9 August 2017</time>
-              </div>
-            </div>
-          </li>
-      <li class="ListItem">
-        <div class="StoryPromoWrapper">
-          <div class="ImageGridItem">
-            <!-- the real page has two more divs with nested grids; but they're not using @supports grid :( -->
-            <div class="ImagePlaceholder">
-              <img class="Img" src="https://ichef.bbci.co.uk/news/660/cpsdevpb/13540/test/_63586197_newodinga.jpg" width="976">
-            </div>
-          </div>
-          <div class="TextGridItem">
-            <h3 class="Headline">
-              <a class="Link fauxblocklink" href="/pidgin">
-                Lorem ipsum
-              </a>
-            </h3>
-            <p class="Summary">
-              Exercitationem laudantium qui dolores est soluta nobis labore fugit. Quisquam quas voluptatem debitis excepturi illo incidunt magnam dolor. Maiores laudantium ea et doloremque eos tenetur.
-            </p>
-            <time class="Timestamp">9 August 2017</time>
-          </div>
-        </div>
-      </li>
-      <li class="ListItem">
-        <div class="StoryPromoWrapper">
-          <div class="ImageGridItem">
-            <!-- the real page has two more divs with nested grids; but they're not using @supports grid :( -->
-            <div class="ImagePlaceholder">
-              <img class="Img" src="https://ichef.bbci.co.uk/news/660/cpsdevpb/13540/test/_63586197_newodinga.jpg" width="976">
-            </div>
-          </div>
-          <div class="TextGridItem">
-            <h3 class="Headline">
-              <a class="Link fauxblocklink" href="/pidgin">
-                Lorem ipsum
-              </a>
-            </h3>
-            <p class="Summary">
-              Exercitationem laudantium qui dolores est soluta nobis labore fugit. Quisquam quas voluptatem debitis excepturi illo incidunt magnam dolor. Maiores laudantium ea et doloremque eos tenetur.
-            </p>
-            <time class="Timestamp">9 August 2017</time>
-          </div>
-        </div>
-      </li>
-      <li class="ListItem">
-        <div class="StoryPromoWrapper">
-          <div class="ImageGridItem">
-            <!-- the real page has two more divs with nested grids; but they're not using @supports grid :( -->
-            <div class="ImagePlaceholder">
-              <img class="Img" src="https://ichef.bbci.co.uk/news/660/cpsdevpb/13540/test/_63586197_newodinga.jpg" width="976">
-            </div>
-          </div>
-          <div class="TextGridItem">
-            <h3 class="Headline">
-              <a class="Link fauxblocklink" href="/pidgin">
-                Lorem ipsum
-              </a>
-            </h3>
-            <p class="Summary">
-              Exercitationem laudantium qui dolores est soluta nobis labore fugit. Quisquam quas voluptatem debitis excepturi illo incidunt magnam dolor. Maiores laudantium ea et doloremque eos tenetur.
-            </p>
-            <time class="Timestamp">9 August 2017</time>
-          </div>
-        </div>
-      </li>
+    <ul>
+      <li class="supports-grid">supports-grid</li>
+      <li class="grid-template-columns">grid-template-columns</li>
+      <li class="grid-column-gap">grid-column-gap</li>
+      <li class="grid-column">grid-column</li>
+      <li class="three-nums">three-nums</li>
+      <li class="plain-fit-content">plain-fit-content</li>
     </ul>
   </body>
 </html>
