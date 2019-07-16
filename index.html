@@ -10,17 +10,26 @@
         .supports-grid {
           color: green;
         }
-      }
-
-      @supports (grid-template-columns: repeat(6, 1fr)) {
-        .grid-template-columns {
-          color: green;
+        .supports-grid::after {
+          content: ' YES';
         }
       }
 
       @supports (grid-template-columns: repeat(6, 1fr)) {
         .grid-template-columns {
           color: green;
+        }
+        .grid-template-columns::after {
+          content: ' YES';
+        }
+      }
+
+      @supports (grid-template-columns: repeat(6, 1fr)) {
+        .grid-template-columns {
+          color: green;
+        }
+        .grid-template-columns::after {
+          content: ' YES';
         }
       }
 
@@ -28,11 +37,17 @@
         .grid-column-gap {
           color: green;
         }
+        .grid-column-gap::after {
+          content: ' YES';
+        }
       }
 
       @supports (grid-column: 1 / span 12) {
         .grid-column {
           color: green;
+        }
+        .grid-column::after {
+          content: ' YES';
         }
       }
 
@@ -40,11 +55,17 @@
         .three-nums {
           color: green;
         }
+        .three-nums::after {
+          content: ' YES';
+        }
       }
 
       @supports (grid-template-columns: fit-content(200px)) {
         .plain-fit-content {
           color: green;
+        }
+        .plain-fit-content::after {
+          content: ' YES';
         }
       }
     </style>
