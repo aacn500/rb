@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        color: red;
+      }
+
+      @supports (display: grid) {
+        .supports-grid {
+          color: green;
+        }
+        .supports-grid::after {
+          content: ' YES';
+        }
+      }
+
+      @supports (grid-template-columns: fit-content(200px)) {
+        .supports-fit-content {
+          color: green;
+        }
+        .supports-fit-content::after {
+          content: ' YES';
+        }
+      }
+
+      @supports (grid-template-columns: repeat(6, 1fr)) {
+        .grid-template-columns {
+          color: green;
+        }
+        .grid-template-columns::after {
+          content: ' YES';
+        }
+      }
+
+      @supports (grid-column-gap: 1rem) {
+        .grid-column-gap {
+          color: green;
+        }
+        .grid-column-gap::after {
+          content: ' YES';
+        }
+      }
+
+      @supports (grid-column: 1 / span 12) {
+        .grid-column {
+          color: green;
+        }
+        .grid-column::after {
+          content: ' YES';
+        }
+      }
+
+      @supports (padding: 1.5rem 0 1.5rem) {
+        .three-nums {
+          color: green;
+        }
+        .three-nums::after {
+          content: ' YES';
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="supports-grid">supports-grid</li>
+      <li class="supports-fit-content">supports-fit-content</li>
+      <li class="grid-template-columns">grid-template-columns</li>
+      <li class="grid-column-gap">grid-column-gap</li>
+      <li class="grid-column">grid-column</li>
+      <li class="three-nums">three-nums</li>
+    </ul>
+  </body>
+</html>
